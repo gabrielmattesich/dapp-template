@@ -1,6 +1,6 @@
 Create a CRU example with Solidity
 
-> In this respositiry we will create a simple  CRU (Create, Read and Update) of tasks configuration. 
+> In this repositiry we will create a simple  CRU (Create, Read and Update) of tasks configuration. 
 
 Tools 
  - Hardhat
