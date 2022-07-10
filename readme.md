@@ -21,6 +21,6 @@ npm run node
 `` js
 npm run local-deploy
 ``
-> Deploy your contract on the network. (In our case, Is a local node emulated with Hardhat, running on http://localhost:8545)
+> Deploy your contract on the network. (In our case, Is a local node with Hardhat, running on http://localhost:8545)
 
 Modules 
