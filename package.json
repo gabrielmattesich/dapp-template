@@ -1,0 +1,30 @@
+{
+  "name": "dapp-template",
+  "version": "0.0.1",
+  "description": "This is an example of a simple dapp",
+  "main": "index.js",
+  "scripts": {
+    "build": "hardhat compile",
+    "local-deploy": "npx hardhat run --network localhost ./scripts/develop.js",
+    "node": "hardhat node",
+    "client": "cd client && npm run serve",
+    "deploy": "hardhat run --network coverage",
+    "test": "hardhat test --network coverage",
+    "coverage": "hardhat coverage",
+    "coverage-report": "hardhat coverage report",
+    "coverage-html": "hardhat coverage html"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.6",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "chai": "^4.3.6",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.6.8",
+    "hardhat": "^2.9.6"
+  },
+  "author": "Gabriel Mattesich",
+  "license": "MIT",
+  "dependencies": {
+    "particles-bg-vue": "^1.3.5"
+  }
+}
