@@ -8,6 +8,7 @@ import Login from "./views/Login.vue";
 import Register from "./views/Register.vue";
 import Profile from "./views/Profile.vue";
 import CrudManager from './views/CrudManager.vue'
+import HistoryTasks from './views/HistoryTasks.vue'
 
 Vue.use(Router);
 
@@ -16,11 +17,16 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "components",
+      name: "crudManager",
       components: {
-        header: AppHeader,
-        default: Components,
-        footer: AppFooter
+        default: CrudManager,
+      }
+    },
+    {
+      path: "/tasks",
+      name: "tasks",
+      components: {
+        default: HistoryTasks,
       }
     },
     {
@@ -60,10 +66,10 @@ export default new Router({
       }
     },
     {
-      path: "/manager",
-      name: "crudManager",
+      path: "/components",
+      name: "components",
       components: {
-        default: CrudManager,
+        default: Components,
       }
     }
   ],

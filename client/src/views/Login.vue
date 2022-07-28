@@ -75,7 +75,15 @@
     </section>
 </template>
 <script>
-export default {};
+export default {
+    methods: {
+        loginWallet() {
+            if (typeof window.ethereum !== 'undefined') {
+                console.log('MetaMask is installed!');
+            }
+        }
+    }
+};
 </script>
 <style>
 </style>

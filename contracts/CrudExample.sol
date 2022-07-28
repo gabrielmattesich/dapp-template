@@ -19,7 +19,7 @@ contract CrudExample {
     Task[] inventoryList;
 
     // In this function we will create a new task and will the information on an array called inventoryList.
-    function createTask(string memory _id, string memory _topic, string memory  _title, string memory  _description, string memory  _date) public {
+    function createTask(string memory _id, string memory _topic, string memory  _title, string memory  _description, string memory  _date) public payable{
         Task memory task;
         task.id = _id;
         task.topic = _topic;

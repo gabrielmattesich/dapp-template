@@ -32,16 +32,19 @@
                                             disabled>
                                 </base-input>
                                 <base-input alternative
+                                            v-model="topic"
                                             class="mb-3"
                                             placeholder="Topic"
                                             addon-left-icon="ni ni-email-83">
                                 </base-input>
                                 <base-input alternative
+                                            v-model="title"
                                             class="mb-3"
                                             placeholder="Title"
                                             addon-left-icon="ni ni-email-83">
                                 </base-input>
                                 <base-input alternative
+                                            v-model="description"
                                             placeholder="Description"
                                             addon-left-icon="ni ni-lock-circle-open">
                                 </base-input>
@@ -53,7 +56,7 @@
                                 </base-checkbox>
                                 </div>
                                 <div class="text-center">
-                                    <RegisterTaskModalVue class="my-4"></RegisterTaskModalVue>
+                                    <RegisterTaskModalVue class="my-4" ></RegisterTaskModalVue>
                                 </div>
                             </form>
                         </template>
@@ -72,7 +75,14 @@ export default {
      ParticlesBg,
      DatePickersVue,
      RegisterTaskModalVue
-    }
+    },
+    data() {
+        return {
+            topic: '',
+            title: '',
+            description: '',
+        }
+    },
 };
 </script>
 <style>
