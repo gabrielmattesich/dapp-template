@@ -7,7 +7,7 @@
     "build": "hardhat compile",
     "local-deploy": "npx hardhat run --network localhost ./scripts/develop.js",
     "node": "hardhat node",
-    "client": "cd client && npm run serve",
+    "client": "cd client && npm run dev",
     "deploy": "hardhat run --network NETWORK_ID coverage",
     "test": "hardhat test --network coverage",
     "coverage": "hardhat coverage",
