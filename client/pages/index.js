@@ -15,6 +15,9 @@ export default function Home() {
         <h5 className={styles.h4}>
           Gestionar tareas con Soldity
         </h5>
+        <div>
+          <button>Connect wallet</button>
+        </div>
       </main>
 
       <footer className={styles.footer}>
